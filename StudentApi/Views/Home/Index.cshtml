@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "_Layout";
+    ViewBag.Title = "Sistem Girişi";
+}
+<div class="text-center">
+    <h1 class="display-4">Hoş Geldiniz</h1>
+    <p>Öğrenci Bilgi Sistemine Hoş Geldiniz. Lütfen Giriş Yapınız.</p>
+</div>
+<div class="row">
+    <div class="col-6 offset-3">
+        <form class="form-signin" id="loginform">
+            <div class="form-label-group">
+                <input type="text" id="username" class="form-control" placeholder="Kullanıcı adı" required autofocus>
+                @*<label for="inputEmail">Kullanıcı Adı</label>*@
+            </div>
+
+            <div class="form-label-group" style="margin-top: 20px;">
+                <input type="password" id="password" class="form-control" placeholder="Şifre" required>
+                @*<label for="inputPassword">Şifre</label>*@
+            </div>
+
+            <div class="form-label-group" style="margin-top: 20px;">
+                <p>KULLANICILAR: onur, ozan, eren, hakan, emre, sevda, mehtap, gokhan, selim, lale, ezgi, ebru</p>
+                <p>ŞİFRE: 123</p>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" id="btnsubmit">GİRİŞ</button>
+            <hr class="my-4">
+        </form>
+    </div>
+
+</div>
+
+
+
+
+
+

@@ -1,0 +1,72 @@
+﻿@{
+    Layout = "_Layout";
+    ViewBag.Title = "Ders Listeniz";
+}
+<div class="text-center">
+    <h1 class="display-4">Ders Listeniz</h1>
+    <p>Kırmızı renkte olan dersleriniz ortalama altında, yeşil renkte olan derslerinizde ilk 10 a girdiniz.</p>
+</div>
+<div class="row">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th scope="col">Ders</th>
+            <th scope="col">1. Yazılı</th>
+            <th scope="col">2. Yazılı</th>
+            <th scope="col">3. Yazılı</th>
+            <th scope="col">1. Sözlü</th>
+            <th scope="col">2. Sözlü</th>
+            <th scope="col">ORTALAMA</th>
+            <th scope="col">G. ORTALAMA</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+</div>
+
+<script type="text/javascript">
+
+    $(function () {
+        //alert(3);
+        loadLessons();
+    });
+
+    function loadLessons() {
+        $.ajax({
+            type: "GET",
+            url: "/student/lessons",
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('Authorization', 'Bearer ' + localStorage.token);  // set token to request header
+            },
+            success: function (data) {
+                console.log(data);
+                var tbody = $("#tbody");
+                $.each(data, function (i, item) {
+                    var ortalamaAltinda = (item.average <= item.generalAverage ? " style='background:#ff7777;' title='GENEL ORTALAMANIN ALTINDA'" : "");
+                    var ilk10Ustunde = (item.average >= item.last10 ? " style='background:#86ff86;' title='İLK 10 KİŞİ İÇİNDE'" : "");
+                    var html = "<tr" + ortalamaAltinda + ilk10Ustunde + ">";
+                    html += "<td>" + item.lesson + "</td>";
+                    html += "<td>" + (item.exam1 === null ? "-" : item.exam1) + "</td>";
+                    html += "<td>" + (item.exam2 === null ? "-" : item.exam2) + "</td>";
+                    html += "<td>" + (item.exam3 === null ? "-" : item.exam3) + "</td>";
+                    html += "<td>" + (item.verbalExam1 === null ? "-" : item.verbalExam1) + "</td>";
+                    html += "<td>" + (item.verbalExam2 === null ? "-" : item.verbalExam2) + "</td>";
+                    html += "<td>" + item.average + "</td>";
+                    html += "<td>" + item.generalAverage + "</td>";
+                    html += "</tr>";
+
+                    tbody.append(html);
+                });
+            },
+            error: function (data) {
+                alert(data.responseJSON.message);
+            },
+        });
+    }
+
+    
+
+</script>
