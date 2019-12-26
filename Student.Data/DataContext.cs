@@ -6,10 +6,10 @@ namespace Student.Data
 {
     public class DataContext : IdentityDbContext<User, Role, int>
     {
-        private string connectionString ;
+        private string connectionString;
 
         public DbSet<Lesson> Lessons { get; set; }
-        public DbSet<LessonUserMap> ClassUserMaps { get; set; }
+        public DbSet<LessonUserMap> LessonUserMaps { get; set; }
 
         public DataContext(DbContextOptions<DataContext> options) : base(options)
         {
@@ -30,8 +30,13 @@ namespace Student.Data
         {
             modelBuilder.Entity<LessonUserMap>()
                 .HasOne(i => i.User)
-                .WithMany(c => c.ClassUserMaps)
-                .OnDelete(DeleteBehavior.ClientCascade);
+                .WithMany(c => c.LessonUserMaps)
+                .OnDelete(DeleteBehavior.Cascade);
+            
+            modelBuilder.Entity<LessonUserMap>()
+                .HasOne(i => i.Lesson)
+                .WithMany(c => c.LessonUserMaps)
+                .OnDelete(DeleteBehavior.Cascade);
 
             base.OnModelCreating(modelBuilder);
         }

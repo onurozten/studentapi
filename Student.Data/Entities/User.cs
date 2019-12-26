@@ -11,6 +11,6 @@ namespace Student.Data.Entities
 
         public string Lastname { get; set; }
 
-        public ICollection<LessonUserMap> ClassUserMaps { get; set; }
+        public ICollection<LessonUserMap> LessonUserMaps { get; set; }
     }
 }

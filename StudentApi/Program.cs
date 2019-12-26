@@ -42,7 +42,7 @@ namespace Student.Api
                         Email = "onur301@gmail.com",
                         Firstname = "Onur",
                         Lastname = "ÖZTEN",
-                        ClassUserMaps = new List<LessonUserMap>()
+                        LessonUserMaps = new List<LessonUserMap>()
                         {
                             OrtalamaHesap(new LessonUserMap(){Lesson = c1, Exam1 = 87, Exam2 = 47, Exam3 = 37, VerbalExam1 = 97}),
                             OrtalamaHesap(new LessonUserMap(){Lesson = c2, Exam1 = 30, Exam2 = 30, Exam3 = 55, VerbalExam1 = 20, VerbalExam2 = 30}),
@@ -57,7 +57,7 @@ namespace Student.Api
                         Email = "ozan@ozan.com",
                         Firstname = "Ozan",
                         Lastname = "ÖZTEN",
-                        ClassUserMaps = new List<LessonUserMap>()
+                        LessonUserMaps = new List<LessonUserMap>()
                         {
                             OrtalamaHesap(new LessonUserMap(){Lesson = c1, Exam1 = 90, Exam2 = 92, Exam3 = 90, VerbalExam1 = 95}),
                             OrtalamaHesap(new LessonUserMap(){Lesson = c2, Exam1 = 70, Exam2 = 80, Exam3 = 75, VerbalExam1 = 100, VerbalExam2 = 100}),
@@ -72,7 +72,7 @@ namespace Student.Api
                         Email = "eren@eren.com",
                         Firstname = "Eren",
                         Lastname = "ÖZTEN",
-                        ClassUserMaps = new List<LessonUserMap>()
+                        LessonUserMaps = new List<LessonUserMap>()
                         {
                             OrtalamaHesap(new LessonUserMap(){Lesson = c1, Exam1 = 85, Exam2 = 90, Exam3 = 95, VerbalExam1 = 100}),
                             OrtalamaHesap(new LessonUserMap(){Lesson = c2, Exam1 = 90, Exam2 = 90, Exam3 = 95, VerbalExam1 = 100, VerbalExam2 = 85}),
@@ -87,7 +87,7 @@ namespace Student.Api
                         Email = "hakan@hakan.com",
                         Firstname = "Hakan",
                         Lastname = "ÖZYOL",
-                        ClassUserMaps = new List<LessonUserMap>()
+                        LessonUserMaps = new List<LessonUserMap>()
                         {
                             OrtalamaHesap(new LessonUserMap(){Lesson = c1, Exam1 = 70, Exam2 = 65, Exam3 = 96, VerbalExam1 = 90}),
                             OrtalamaHesap(new LessonUserMap(){Lesson = c2, Exam1 = 50, Exam2 = 70, Exam3 = 65, VerbalExam1 = 60, VerbalExam2 = 40}),
@@ -102,7 +102,7 @@ namespace Student.Api
                         Email = "emre@emre.com",
                         Firstname = "Emre",
                         Lastname = "SELAMOÐLU",
-                        ClassUserMaps = new List<LessonUserMap>()
+                        LessonUserMaps = new List<LessonUserMap>()
                         {
                             OrtalamaHesap(new LessonUserMap(){Lesson = c1, Exam1 = 80, Exam2 = 75, Exam3 = 76, VerbalExam1 = 60}),
                             OrtalamaHesap(new LessonUserMap(){Lesson = c2, Exam1 = 80, Exam2 = 70, Exam3 = 75, VerbalExam1 = 60, VerbalExam2 = 30}),
@@ -117,7 +117,7 @@ namespace Student.Api
                         Email = "sevda@sevda.com",
                         Firstname = "Sevda",
                         Lastname = "AYDOÐDU",
-                        ClassUserMaps = new List<LessonUserMap>()
+                        LessonUserMaps = new List<LessonUserMap>()
                         {
                             OrtalamaHesap(new LessonUserMap(){Lesson = c1, Exam1 = 90, Exam2 = 85, Exam3 = 72, VerbalExam1 = 70}),
                             OrtalamaHesap(new LessonUserMap(){Lesson = c2, Exam1 = 90, Exam2 = 80, Exam3 = 70, VerbalExam1 = 70, VerbalExam2 = 60}),
@@ -132,7 +132,7 @@ namespace Student.Api
                         Email = "mehtap@mehtap.com",
                         Firstname = "Mehtap",
                         Lastname = "GÜNER",
-                        ClassUserMaps = new List<LessonUserMap>()
+                        LessonUserMaps = new List<LessonUserMap>()
                         {
                             OrtalamaHesap(new LessonUserMap(){Lesson = c1, Exam1 = 50, Exam2 = 55, Exam3 = 62, VerbalExam1 = 60}),
                             OrtalamaHesap(new LessonUserMap(){Lesson = c2, Exam1 = 60, Exam2 = 40, Exam3 = 50, VerbalExam1 = 60, VerbalExam2 = 70}),
@@ -147,7 +147,7 @@ namespace Student.Api
                         Email = "gokhan@gokhan.com",
                         Firstname = "Gökhan",
                         Lastname = "AYDOÐAN",
-                        ClassUserMaps = new List<LessonUserMap>()
+                        LessonUserMaps = new List<LessonUserMap>()
                         {
                             OrtalamaHesap(new LessonUserMap(){Lesson = c1, Exam1 = 60, Exam2 = 45, Exam3 = 90, VerbalExam1 = 40}),
                             OrtalamaHesap(new LessonUserMap(){Lesson = c2, Exam1 = 70, Exam2 = 50, Exam3 = 40, VerbalExam1 = 50, VerbalExam2 = 90}),
@@ -162,7 +162,7 @@ namespace Student.Api
                         Email = "selim@selim.com",
                         Firstname = "Selim",
                         Lastname = "IÞIK",
-                        ClassUserMaps = new List<LessonUserMap>()
+                        LessonUserMaps = new List<LessonUserMap>()
                         {
                             OrtalamaHesap(new LessonUserMap(){Lesson = c1, Exam1 = 65, Exam2 = 95, Exam3 = 50, VerbalExam1 = 40}),
                             OrtalamaHesap(new LessonUserMap(){Lesson = c2, Exam1 = 79, Exam2 = 90, Exam3 = 50, VerbalExam1 = 50, VerbalExam2 = 50}),
@@ -177,7 +177,7 @@ namespace Student.Api
                         Email = "lale@lale.com",
                         Firstname = "Lale",
                         Lastname = "SEVÝNÇ",
-                        ClassUserMaps = new List<LessonUserMap>()
+                        LessonUserMaps = new List<LessonUserMap>()
                         {
                             OrtalamaHesap(new LessonUserMap(){Lesson = c1, Exam1 = 45, Exam2 = 90, Exam3 = 50, VerbalExam1 = 40}),
                             OrtalamaHesap(new LessonUserMap(){Lesson = c2, Exam1 = 49, Exam2 = 90, Exam3 = 50, VerbalExam1 = 50, VerbalExam2 = 50}),
@@ -192,7 +192,7 @@ namespace Student.Api
                         Email = "ezgi@ezgi.com",
                         Firstname = "Ezgi",
                         Lastname = "ADIGÜZEL",
-                        ClassUserMaps = new List<LessonUserMap>()
+                        LessonUserMaps = new List<LessonUserMap>()
                         {
                             OrtalamaHesap(new LessonUserMap(){Lesson = c1, Exam1 = 75, Exam2 = 80, Exam3 = 60, VerbalExam1 = 90}),
                             OrtalamaHesap(new LessonUserMap(){Lesson = c2, Exam1 = 79, Exam2 = 80, Exam3 = 60, VerbalExam1 = 80, VerbalExam2 = 86}),
@@ -208,7 +208,7 @@ namespace Student.Api
                         Email = "ebru@ebru.com",
                         Firstname = "Ebru",
                         Lastname = "ADIGÜZEL",
-                        ClassUserMaps = new List<LessonUserMap>()
+                        LessonUserMaps = new List<LessonUserMap>()
                         {
                             OrtalamaHesap(new LessonUserMap(){Lesson = c1, Exam1 = 65, Exam2 = 70, Exam3 = 80, VerbalExam1 = 48}),
                             OrtalamaHesap(new LessonUserMap(){Lesson = c2, Exam1 = 69, Exam2 = 70, Exam3 = 80, VerbalExam1 = 58, VerbalExam2 = 59}),

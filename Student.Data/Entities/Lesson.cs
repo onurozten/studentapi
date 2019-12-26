@@ -13,6 +13,6 @@ namespace Student.Data.Entities
         [MaxLength(100)]
         public string Name { get; set; }
 
-        public ICollection<LessonUserMap> ClassUserMaps { get; set; }
+        public ICollection<LessonUserMap> LessonUserMaps { get; set; }
     }
 }
